@@ -1,0 +1,862 @@
+.ourTeas-slogan {
+  bottom: 10%;
+  position: absolute;
+  width: 100%;
+
+  p {
+    color: $white;
+    font-size: calc(1em + 1vw);
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+.slogan-responsiveAdd {
+  display: none;
+}
+
+.ourTeas-teaList {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3em 0;
+}
+
+.teaList-text {
+  flex: 0 1 100%;
+}
+
+.teaList-link-wrap {
+  flex: 0 1 100%;
+  text-align: center;
+
+  .h2 {
+    font-size: calc(.875em + 1.25vw);
+    margin: 0;
+  }
+
+  .icon-arrow-dark {
+    height: 1.25em;
+    position: relative;
+    right: -.25em;
+    top: .25em;
+    width: 1.25em;
+  }
+
+  .teaList-link {
+    color: $color-heading;
+    transition: color .3s ease-in-out, text-shadow .2s ease-in-out;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $brand-red;
+      outline: none;
+    }
+  }
+}
+
+.ourTeas-seasonal {
+  align-items: center;
+  background: $seasonal-background-match;
+  border-bottom: .0625em solid $brand-border;
+  border-top: .0625em solid $brand-border;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    background: $seasonal-background-match;
+    content: '';
+    display: block;
+    height: calc(100% + .125em);
+    margin-left: -50%;
+    position: absolute;
+    width: 200%;
+    z-index: -1;
+  }
+}
+
+.seasonal-text {
+  color: $brand-green;
+  flex: 0 1 100%;
+  order: 2;
+
+  h2 {
+    display: none;
+  }
+
+  p {
+    margin: 1.5em 0;
+  }
+
+  a {
+    font-family: $sans-serif-stack;
+    font-weight: 400;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $brand-red;
+      outline: none;
+      text-shadow: 1px 1px 3px $text-shadow;
+    }
+
+    &:focus {
+      box-shadow: 0 .0625em 0 0 $brand-red;
+      outline: none;
+    }
+  }
+}
+
+.seasonal-image {
+  display: flex;
+  flex: 0 1 100%;
+  flex-wrap: wrap;
+  order: 1;
+
+  h2 {
+    flex: 1 1 100%;
+  }
+}
+
+.ourTeas-teaTypes {
+  background-color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  h2 {
+    flex: 1 1 100%;
+  }
+
+  div {
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: center;
+    padding: 1em;
+    position: relative;
+
+    &:nth-of-type(n+7) {
+      span {
+        background: $brand-green-light;
+      }
+    }
+  }
+
+  a:hover > span,
+  a:active > span,
+  a:focus > span {
+    box-shadow: -1px -2px 4px $neutral-light;
+  }
+
+  img {
+    transition: box-shadow .2s ease-in-out;
+  }
+
+  span {
+    background: $brand-red;
+    bottom: 8em;
+    color: $white;
+    display: block;
+    font-family: $serif-stack;
+    left: 1em;
+    padding: .25em .5em 0;
+    position: absolute;
+    transition: box-shadow .3s ease-in-out;
+  }
+}
+
+.masterProductList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navTrigger-label-filter {
+  flex: 0 1 auto;
+  margin: 1em;
+}
+
+.navTrigger-filter:checked + .masterProductList-sidebar {
+  display: flex;
+}
+
+.masterProductList-main {
+  background: $white;
+  flex: 1 1 100%;
+  order: 2;
+  padding: 2em 1em;
+}
+
+.main-productDetails {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.productDetails-description {
+  flex: 1 1 100%;
+  order: 1;
+}
+
+.productDetails-image {
+  align-items: center;
+  display: flex;
+  flex: 1 1 100%;
+  order: 0;
+}
+
+.masterProductList-sidebar {
+  // align-items: center;
+  display: none;
+
+  // left: -12em;
+  // max-width: 0;
+  flex: 1 1 100%;
+  justify-content: space-around;
+  order: 1;
+  // overflow-y: scroll;
+  padding: 0 1em;
+  // position: static;
+  // transform: translateX(-40em);
+  // z-index: 1;
+
+  a {
+    color: $color-body;
+
+    &:visited {
+      color: $color-body;
+    }
+  }
+
+  h3,
+  h4 {
+    font-family: $sans-serif-stack;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $black;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  h4 {
+    color: $brand-red;
+    font-size: .8em;
+    font-weight: 400;
+  }
+
+  .active {
+    color: $brand-green;
+
+    &:visited {
+      color: $brand-green;
+    }
+
+    &::before {
+      color: $brand-green;
+      content: '.';
+      font-size: 3em;
+      line-height: 0;
+      margin-left: -.4em;
+      margin-right: .12em;
+      vertical-align: .05em;
+    }
+  }
+}
+
+.filter-certification,
+.filter-origin {
+  li {
+    margin: .75em 0;
+ }
+}
+
+.sidebar-flexGroup {
+  flex: 0 1 auto;
+}
+
+.nav-listingType {
+  li {
+    margin-bottom: .25em;
+    margin-top: .75em;
+  }
+
+  a {
+    &:visited {
+      color: $color-body;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $brand-red;
+      text-shadow: 1px 1px 3px $text-shadow;
+    }
+  }
+}
+
+.filter-checkbox-native {
+  display: none;
+}
+
+.sidebar-checkbox-svg {
+  height: .6666666667em;
+  width: .6666666667em;
+}
+
+.sidebar-certificationIcon {
+  height: 1em;
+  margin-left: .2em;
+  position: relative;
+  top: .111111em;
+  width: 1em;
+}
+
+input[type='checkbox']:checked+.sidebar-checkbox-svg>.checkbox-center {
+  fill: $brand-red;
+}
+
+.main-filterQuote {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-filter {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+
+.filter-group {
+  display: flex;
+  position: relative;
+}
+
+.filter-label {
+  color: $grey-light;
+  font-size: inherit;
+  font-weight: 400;
+  left: .5em;
+  position: absolute;
+  top: .5em;
+  transition: top .2s ease-in-out, color .2s ease-in-out, font-size .2s ease-in-out;
+}
+
+.filter-input:focus + .filter-label,
+.filter-input:valid + .filter-label {
+  color: $color-body;
+  font-size: .875em;
+  font-weight: 900;
+  left: 0;
+  top: -1.65em;
+}
+
+.filter-input {
+  -webkit-appearance: none;
+  border-right: 0;
+  flex: 1 1 80%;
+  height: 2.5em;
+}
+
+.filter-searchButton {
+  background: $button-green;
+  border: 0;
+  color: $neutral-light;
+  flex: 0 0 auto;
+  margin-top: 0;
+  text-align: left;
+}
+
+.filter-searchIcon {
+  height: 1.5em;
+  position: relative;
+  top: .125em;
+  width: 1.5em;
+}
+
+.filter-helperText {
+  font-size: .875em;
+  font-weight: 400;
+  opacity: 0;
+
+  a {
+    color: $brand-green;
+    font-family: $sans-serif-stack;
+    font-weight: 400;
+  }
+}
+
+.helperText-isInserted {
+  animation: fadeIn .3s ease-in-out both;
+  margin: .25em 0;
+}
+
+.main-quote {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.quote-context {
+  flex: 1 1 auto;
+  margin: 1rem 0 0;
+}
+
+.quote-button {
+  flex: 0 0 auto;
+  margin-top: 0;
+  position: relative;
+
+  &.fixed {
+    animation: fadeOut .1s ease-in-out both 1, fadeIn .1s ease-in-out .1s both 1;  // conflicts with Tada
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    transform: scale3d(.9, .9, 1);
+    transition: transform .4s ease-in-out;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &.fixed.isFull {
+    animation: fadeOut .1s ease-in-out both 1, fadeIn .1s ease-in-out .1s both 1, tada .7s;
+  }
+}
+
+.listingGroup-wrap {
+  margin-bottom: 2em;
+}
+
+.listingGroup-header {
+  cursor: pointer;
+  margin: 0 0 0 1em;
+  position: relative;
+
+  &::before {
+    color: $brand-green-lighter;
+    content: '▾';
+    font-size: .9em;
+    left: -1em;
+    position: absolute;
+    transition: transform .1s ease-in-out;
+  }
+}
+
+.listingGroup-header-isCollapsed {
+
+  &::before {
+    bottom: .3em;
+    left: -.9em;
+    transform: rotate(-90deg);
+  }
+}
+
+.listingGroup-header-button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-align: inherit;
+  width: 100%;
+}
+
+.listingGroup-isExpanded {
+  animation: slide-down .2s ease-in-out both;
+}
+
+.listingGroup-isCollapsed {
+  animation: slide-up .2s ease-in-out both;
+}
+
+.listingGroup-isHidden {
+  display: none;
+}
+
+.isFull {
+  animation: tada .7s;
+}
+
+.listing {
+  border-top: .0625em solid $grey-dark;
+  display: flex;
+  flex-direction: column;
+}
+
+.listing-isHidden {
+  display: none;
+}
+
+.listing-header {
+  align-items: baseline;
+  border-bottom: .0625em solid $brand-border;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding: .75rem 0;
+}
+
+.header-title {
+  flex: 1 1 100%;
+}
+
+.header-lineNumber {
+  color: $brand-red;
+  font-size: 1.125em;
+  margin-right: .1em;
+}
+
+.header-name {
+  display: inline;
+}
+
+.header-details {
+  display: flex;
+  flex: 0 1 70%;
+
+  .stock {
+    flex: 0 0 50%;
+    margin: .5em 0 0;
+  }
+
+  .pack {
+    flex: 0 0 50%;
+    font-weight: 400;
+    margin: .5em 0 0;
+  }
+}
+
+.listing-checkbox-native {
+  display: none;
+}
+
+.listing-checkbox-svg {
+  height: 1em;
+  margin-right: .5em;
+  width: 1em;
+}
+
+.checkbox-center {
+  transition: fill .1s ease-in-out;
+}
+
+input[type='checkbox']:checked + .listing-checkbox-svg > .checkbox-center {
+  fill: $brand-red;
+}
+
+input[type='checkbox'][disabled] + .listing-checkbox-svg > .checkbox-outer {
+  stroke: transparent;
+}
+
+.listing-body {
+  align-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: .875em;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.body-description {
+  flex: 0 0 100%;
+}
+
+.description-accordion-control {
+  background: none;
+  border: 0;
+  color: $brand-green;
+  cursor: pointer;
+  margin: 0 0 1.5em;
+  outline: none;
+  padding: 0;
+  text-align: inherit;
+  transition: color .3s ease-in-out, text-shadow .2s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $brand-red;
+    text-shadow: 1px 1px 3px $text-shadow;
+  }
+
+  &:focus {
+    outline: .0625em solid $brand-red;
+  }
+}
+
+.description-content-isCollapsed {
+  display: none;
+}
+
+.description-content-isExpanded {
+  animation: slide-down .2s ease-in-out both;
+}
+
+.body-certifications {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: flex-start;
+  margin-bottom: 1.5em;
+
+  span {
+    align-items: center;
+    display: flex;
+    flex: 0 0 1.5em;
+    justify-content: center;
+  }
+}
+
+.listing-icon {
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.body-characteristics {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: space-between;
+
+  div {
+    align-items: baseline;
+    display: flex;
+    flex: 0 1 30%;
+    flex-direction: column;
+  }
+
+  .label {
+    color: $grey;
+    font-size: .7em;
+    margin-right: .5em;
+  }
+}
+
+.listing.accessory {
+
+  .listing-header {
+    flex-wrap: wrap;
+  }
+
+  .header-title {
+    flex: 0 1 100%;
+  }
+
+  .header-details {
+    flex: 1 1 100%;
+  }
+
+  .stock {
+    flex: 0 0 20%;
+  }
+
+  .pack {
+    flex: 0 0 80%;
+  }
+
+  .listing-body {
+    align-items: flex-start;
+  }
+
+  .body-description {
+    flex: 1 1 100%;
+  }
+
+  .body-characteristics {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 33.75em) {
+  .quote-button {
+    &.fixed {
+      bottom: auto;
+      left: auto;
+      position: fixed;
+      right: 0;
+      top: 0;
+      transform: scale3d(.9, .9, 1);
+      transition: transform .4s ease-in-out;
+      width: auto;
+      z-index: 1;
+    }
+  }
+
+  .ourTeas-teaTypes {
+    div {
+      flex: 0 1 50%;
+    }
+  }
+
+  .slogan-responsiveAdd {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .masterProductList {
+    flex-wrap: nowrap;
+  }
+
+  .masterProductList-main {
+    flex: 0 1 75%;
+    order: 0;
+  }
+
+  .masterProductList-sidebar {
+    align-content: center;
+    display: flex;
+    flex: 0 0 12em;
+    flex-direction: column;
+    justify-content: flex-start;
+    order: 0;
+    padding: 2em 1em;
+
+    transform: translate3d(0, 0, 0);
+  }
+
+  .navTrigger-label-filter {
+    display: none;
+  }
+
+  .sidebar-nav
+  .nav-listingType {
+    li {
+      margin-bottom: .25em;
+      margin-top: 0;
+  }
+ }
+
+  .filter-certification,
+  .filter-origin {
+    li {
+      margin: .1em 0;
+   }
+ }
+}
+
+@media screen and (min-width: 43.75em) {
+  .ourTeas-slogan {
+    p {
+      width: 55%;
+    }
+  }
+
+  .teaList-text {
+    flex: 0 1 45%;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .teaList-link-wrap {
+    flex: 0 1 50%;
+    text-align: left;
+  }
+
+
+  .main-productDetails {
+    flex-wrap: nowrap;
+  }
+
+  .productDetails-description {
+    flex: 1 1 55%;
+    order: 0;
+    padding-right: .5em;
+  }
+
+  .productDetails-image {
+    flex: 1 1 45%;
+    order: 0;
+  }
+
+  .seasonal-text {
+    flex: 0 1 45%;
+    order: 0;
+
+    h2 {
+      display: block;
+    }
+  }
+
+  .seasonal-image {
+    flex: 0 1 50%;
+    order: 0;
+
+    h2 {
+      display: none;
+    }
+  }
+
+  .listing.accessory .body-description {
+    flex: 0 1 60%;
+  }
+
+  .listing.accessory .body-characteristics{
+    flex: 0 1 20%;
+  }
+}
+
+@media screen and (min-width: 53.75em) {
+  .ourTeas-teaTypes {
+    div {
+      flex: 0 1 33.333333%;
+    }
+  }
+
+  .listing-header {
+    justify-content: space-between;
+  }
+
+  .header-title {
+    flex: 0 1 65%;
+  }
+
+  .header-details {
+    flex: 0 1 30%;
+
+  }
+
+  .listing-body {
+    justify-content: space-between;
+  }
+
+  .body-description {
+    flex: 0 1 60%;
+  }
+
+  .body-certifications {
+    flex: 0 1 30%;
+  }
+}
+
+@media screen and (min-width: 67.5em) {
+  .body-description {
+    flex: 0 1 40%;
+  }
+
+  .body-certifications {
+    flex: 0 1 30%;
+    justify-content: center;
+    padding: 0 .25em;
+  }
+
+  .body-characteristics {
+    display: block;
+    flex: 0 1 30%;
+
+    div {
+      flex-direction: row;
+    }
+  }
+}

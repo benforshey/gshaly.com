@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-decaf</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-decaf">
+            <g id="Line">
+                <circle id="Oval-Copy-5" fill="#9DCA6C" cx="11.5" cy="11.5" r="11.5"></circle>
+                <path d="M18,11.5 C18,7.91014913 15.0898509,5 11.5,5 C7.91014913,5 5,7.91014913 5,11.5 C5,15.0898509 7.91014913,18 11.5,18 C15.0898509,18 18,15.0898509 18,11.5 Z M3,11.5 C3,6.80557963 6.80557963,3 11.5,3 C16.1944204,3 20,6.80557963 20,11.5 C20,16.1944204 16.1944204,20 11.5,20 C6.80557963,20 3,16.1944204 3,11.5 Z" id="Oval-2" fill="#FFFFFF"></path>
+                <polygon fill="#FFFFFF" points="15.8060425 17.220256 16.5131493 17.9273628 17.9273628 16.5131493 17.220256 15.8060425 7.70710678 6.29289322 7 5.58578644 5.58578644 7 6.29289322 7.70710678"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

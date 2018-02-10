@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Play_Icon" data-name="Play Icon" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 148 148">
+  <title>Play Icon</title>
+  <defs>
+    <style>
+      .cls-1 { opacity: 0.5; } .cls-2 { fill: #fff; stroke: #fff; stroke-linejoin: round; stroke-width: 4px; fill-rule: evenodd; filter: url(#filter); }
+    </style>
+    <filter id="filter" width="124" height="138" x="2048" y="206" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="5.66"/>
+      <feFlood result="flood" flood-color="#202020" flood-opacity=".2"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Ellipse_3_copy" cx="74" cy="74" r="74" data-name="Ellipse 3 copy" class="cls-1"/>
+  <g fill="#fff" transform="translate(-2024 -202)" filter="url(#filter)">
+    <path id="Play_Icon_copy" fill="inherit" stroke="inherit" d="M2083.6 241.86l51.6 32.7-51.6 32.7v-65.4z" data-name="Play Icon copy" class="cls-2" filter="none"/>
+  </g>
+  <use fill="none" stroke="#fff" transform="translate(-2024 -202)" xlink:href="#Play_Icon_copy" filter="none"/>
+</svg>

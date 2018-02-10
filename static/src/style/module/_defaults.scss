@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: $neutral-light;
+}
+
+::selection {
+  background: $brand-green-lighter;
+}
+
+.body-wrap {
+  margin: 0 auto;
+  max-width: 87.5rem;
+  overflow-x: hidden;
+  padding: 0 1rem;
+}
+
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+img,
+video {
+  align-self: center;
+  width: 100%;
+}
+
+ul,
+ol {
+  margin-bottom: 1.5em;
+}
+
+a {
+  display: inline-block;
+  font-family: $serif-stack;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color .3s ease-in-out, text-shadow .2s ease-in-out, box-shadow .5s ease-in-out;
+
+  &:link {
+    color: $brand-green;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $brand-red;
+    outline: none;
+    text-shadow: 1px 1px 3px $text-shadow;
+  }
+
+  &:focus {
+    box-shadow: 0 .0625em 0 0 $brand-red;
+    outline: none;
+  }
+}
+
+button {
+  font-size: inherit;
+}
+
+.button {
+  background: $brand-red;
+  border: .0625em solid $brand-red;
+  color: $white;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: .0625em;
+  min-height: 2.5em;
+  padding: .25em 1em;
+  text-transform: uppercase;
+}
+
+.button-isDisabled {
+  background: $grey-dark;
+  outline: .125em solid $brand-red;
+}
+
+input {
+  border: .0625rem solid $brand-border;
+  font-size: inherit;
+  line-height: inherit;
+  padding: .5em;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+abbr {
+  background: $white;
+  border-bottom: 1px dotted $grey-light;
+}
+
+.abbr-noVisual {
+  background: none;
+  border-bottom: 0;
+}
+
+textarea {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+.period {
+  font-variant: small-caps;
+}
+
+.associations {
+  display: flex;
+  flex-direction: column;
+}
+
+.tradeLogo-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tradeLogo {
+  flex: 0 0 6em;
+  margin: .2em 2%;
+  max-width: 6em;
+}
+
+@media screen and (min-width: 25em) {
+  .body-wrap {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .body-wrap {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .body-wrap {
+    padding: 0 4rem;
+  }
+}

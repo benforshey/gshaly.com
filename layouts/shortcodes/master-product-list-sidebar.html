@@ -1,0 +1,212 @@
+<label for="navTrigger-filter" class="navTrigger-label-filter" tabindex="2">
+    <svg class="navTrigger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20">
+        <title>Menu Icon</title>
+        <desc>This icond opens and closes a menu.</desc>
+        <path fill="#544C4A" fill-rule="evenodd" d="M0 0h25v4H0zm0 8h25v4H0zm0 8h25v4H0z"/>
+    </svg>
+    &nbsp;Tea Types and Filter Menu
+</label>
+<input id="navTrigger-filter" class="navTrigger navTrigger-filter" type="checkbox">
+<aside class="masterProductList-sidebar">
+    <div class="sidebar-flexGroup">
+        <h3>Tea Types</h3>
+        <nav class="sidebar-nav">
+            <ul class="nav-listingType">
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/">All Teas</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/black/">Black</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/green/">Green</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/white/">White</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/decaffeinated/">Decaffeinated</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/oolong/">Oolong</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/pu-erh/">Pu-erh</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/flavored-black/">Flavored Black</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/flavored-fruit-blend/">Flavored Fruit Blend</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/flavored-green/">Flavored Green</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/herbal/">Herbal</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/scented/">Scented</a></li>
+                <li><a href="{{- .Site.BaseURL }}our-teas/master-product-list/seasonal-micro-lots/">Seasonal Micro-Lots</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar-flexGroup">
+        <h3>Filter By</h3>
+        <div class="sidebar-filter">
+            <h4>Certification</h4>
+            <ul class="filter-certification">
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="organic" class="filter-checkbox-native filter-and">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        <svg class="sidebar-certificationIcon">
+                            <use xlink:href="#icon-organic"/>
+                        </svg>
+                        Organic
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="fair trade" class="filter-checkbox-native filter-and">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        <svg class="sidebar-certificationIcon">
+                            <use xlink:href="#icon-fair-trade"/>
+                        </svg>
+                        Fair Trade
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="kosher" class="filter-checkbox-native filter-and">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        <svg class="sidebar-certificationIcon">
+                            <use xlink:href="#icon-kosher"/>
+                        </svg>
+                        Kosher
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="caffeine free" class="filter-checkbox-native filter-and">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        <svg class="sidebar-certificationIcon">
+                            <use xlink:href="#icon-caffeine-free"/>
+                        </svg>
+                        Caffeine Free
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="iced" class="filter-checkbox-native filter-and">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        <svg class="sidebar-certificationIcon">
+                            <use xlink:href="#icon-iced"/>
+                        </svg>
+                        Iced
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="seasonal" class="filter-checkbox-native filter-and">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        <svg class="sidebar-certificationIcon">
+                            <use xlink:href="#icon-seasonal"/>
+                        </svg>
+                        Seasonal
+                    </label>
+                </li>
+            </ul>
+            <h4>Tea Origin</h4>
+            <ul class="filter-origin">
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="ceylon" class="filter-checkbox-native filter-or">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        Ceylon
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="china" class="filter-checkbox-native filter-or">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        China
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="germany" class="filter-checkbox-native filter-or">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        Germany
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="india" class="filter-checkbox-native filter-or">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        India
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="japan" class="filter-checkbox-native filter-or">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        Japan
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="south africa" class="filter-checkbox-native filter-or">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        South Africa
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-filter="sri lanka" class="filter-checkbox-native filter-or">
+                        <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                        Sri Lanka
+                    </label>
+                </li>
+                <label>
+                    <input type="checkbox" data-filter="taiwan" class="filter-checkbox-native filter-or">
+                    <svg class="sidebar-checkbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Checkbox</title>
+                            <rect x="0" y="0" width="12" height="12" stroke="#2f2f2f" stroke-width="3" fill="transparent"></rect>
+                            <rect class="checkbox-center" x="3" y="3" width="6" height="6" stroke="#fff" stroke-width="0" fill="transparent"></rect>
+                        </svg>
+                    Taiwan
+                </label>
+            </ul>
+        </div>
+    </div>
+</aside>

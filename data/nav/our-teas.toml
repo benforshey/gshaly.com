@@ -1,0 +1,5 @@
+section = [
+    ["our-teas/master-product-list/", "Master Product List"],
+    ["our-teas/master-product-list/seasonal-micro-lots/", "Seasonal Micro-Lots"],
+    ["our-teas/master-product-list/accessory/", "Accessories"]
+]

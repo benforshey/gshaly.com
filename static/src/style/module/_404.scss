@@ -1,0 +1,12 @@
+.heroImage-text-error {
+  bottom: 10%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  h1 {
+    color: $neutral-lighter;
+    font-size: calc(1.5em + 2vw);
+    margin: 0;
+  }
+}

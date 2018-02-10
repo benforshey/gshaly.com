@@ -1,0 +1,33 @@
+baseurl = "https://gshaly.com/"
+languageCode = "en-us"
+
+SectionPagesMenu = "global"
+[[menu.global]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.global]]
+    identifier = "about-us"
+    name = "About Us"
+    url = "/about-us/"
+    weight = 2
+[[menu.global]]
+    identifier = "our-teas"
+    name = "Our Teas"
+    url = "/our-teas/"
+    weight = 3
+[[menu.global]]
+    identifier = "our-standards"
+    name = "Our Standards"
+    url = "/our-standards/"
+    weight = 4
+[[menu.global]]
+    identifier = "ordering"
+    name = "Ordering"
+    url = "/ordering/"
+    weight = 5
+[[menu.global]]
+    identifier = "tea-knowledge"
+    name = "Tea Knowledge"
+    url = "/tea-knowledge/"
+    weight = 6

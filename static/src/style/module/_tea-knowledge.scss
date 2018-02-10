@@ -1,0 +1,127 @@
+.teaKnowledge {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 4em;
+}
+
+.teaKnowledge-nav {
+  box-shadow: 0 .125em 0 0 $brand-border;
+  flex: 1 1 100%;
+  margin-bottom: 2em;
+  padding: 0 1em;
+  position: relative;
+
+  h2 {
+    font-family: $sans-serif-stack;
+    font-weight: 900;
+    margin: 0 0 1em;
+    text-transform: uppercase;
+  }
+
+  a:link {
+    color: inherit;
+  }
+
+  .active {
+    color: $brand-green;
+
+    &:visited {
+      color: $brand-green;
+    }
+
+    &::before {
+      color: $brand-green;
+      content: '◆';
+      margin-left: -1.25em;
+      margin-right: .5em;
+    }
+  }
+}
+
+.teaKnowledge-tableOfContents {
+  list-style: square;
+  margin: 0 0 .5em 1em;
+
+  a {
+    font-family: $sans-serif-stack;
+    font-size: .875em;
+    font-weight: 300;
+    vertical-align: middle;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $brand-red;
+      outline: none;
+      text-shadow: 1px 1px 3px $text-shadow;
+    }
+
+    &:focus {
+      box-shadow: 0 .0625em 0 0 $brand-red;
+      outline: none;
+    }
+  }
+}
+
+.teaKnowledge-article {
+  flex: 1 1 100%;
+
+  h1 {
+    margin-top: 0;
+  }
+
+  h2 + h3 {
+    margin-top: 0;
+  }
+
+  ul {
+    margin-left: 2em;
+  }
+
+  li {
+    list-style: none outside;
+    position: relative;
+
+    &::before {
+      color: $color-body;
+      content: '◆';
+      left: -1em;
+      position: absolute;
+    }
+  }
+
+  dl + p {
+    margin-top: 1.5em;
+  }
+
+  dt {
+    font-weight: 400;
+  }
+
+  dd {
+    margin-left: 2em;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .teaKnowledge-nav {
+    box-shadow: none;
+    flex: 0 0 40%;
+    margin-bottom: 0;
+    padding: 2em 4em 0 0;
+  }
+
+  .teaKnowledge-nav-wrap {
+    &.fixed {
+      padding-right: 4em;
+      position: fixed;
+      top: 2em;
+      width: 33%;
+    }
+  }
+
+  .teaKnowledge-article {
+    flex: 0 1 60%;
+  }
+}

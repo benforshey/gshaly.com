@@ -1,0 +1,59 @@
+.ourStandards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ourStandards-main {
+  flex: 1 1 100%;
+  padding: 0 1.5em;
+
+  section {
+    padding: 1.5em 0;
+  }
+
+  ul {
+    margin-left: 2em;
+  }
+
+  li {
+    list-style: none outside;
+    position: relative;
+
+    &::before {
+      color: $color-body;
+      content: '◆';
+      left: -1em;
+      position: absolute;
+    }
+  }
+}
+
+.ourStandards-aside {
+  flex: 1 1 100%;
+  padding: 0 1.5em;
+
+  section>img {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .ourStandards {
+    flex-wrap: nowrap;
+  }
+
+  .ourStandards-main {
+    flex: 1 1 75%;
+    padding: 3em;
+  }
+
+  .ourStandards-aside {
+    border-left: .0625em solid $brand-border;
+    flex: 1 1 25%;
+    padding: 3em 1.5em;
+
+    section>img {
+      width: 100%;
+    }
+  }
+}

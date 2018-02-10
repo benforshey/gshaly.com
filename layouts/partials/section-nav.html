@@ -1,0 +1,13 @@
+{{- if eq .Params.sectionnav true }}
+<div class="section-nav">
+    <ul>
+    {{- range (index .Site.Data.nav .Section) }}
+        {{- range . }}
+        <li>
+            <a href="{{- if in (index . 0) "/" }}{{- $.Site.BaseURL }}{{- index . 0 }}{{- else }}{{- index . 0 }}{{- end }}" class="section-link">{{- index . 1 }}</a>
+        </li>
+        {{- end }}
+    {{- end }}
+    </ul>
+</div>
+{{- end }}

@@ -1,0 +1,222 @@
+.ordering {
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  a {
+    font-family: $sans-serif-stack;
+  }
+}
+
+.ordering-main {
+  flex: 1 1 100%;
+  padding: 0 1.5em;
+}
+
+.ordering-aside {
+  flex: 1 1 100%;
+  padding: 0 1.5em;
+}
+
+.orderingForm {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  fieldset {
+    max-width: 100%;
+  }
+
+  legend {
+    max-width: 100%;
+  }
+
+  legend {
+    font-size: .875em;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+
+  label {
+    display: block;
+  }
+
+  input {
+    background: $white;
+    width: 100%;
+  }
+
+  textarea {
+    border: .0625rem solid $brand-border;
+    padding: .5em;
+    resize: none;
+  }
+
+
+  .form-button {
+    align-self: flex-end;
+    margin-top: 1.5em;
+  }
+}
+
+.form-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-column {
+  align-content: center;
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  div {
+    flex: 1 1 auto;
+    margin-bottom: 1em;
+  }
+
+  .input-wrap {
+    position: relative;
+
+    label {
+      padding-right: 5em;  // offsets the absolutely positioned 'required' span
+    }
+  }
+
+  .textarea-wrap {
+    flex: 0 1 45%;
+  }
+
+  .textarea-wrap>textarea {
+    height: 90%;
+    width: 100%;
+  }
+}
+
+.form-input-innerFeedback {
+  color: $brand-green-light;
+  font-size: .875em;
+  font-weight: 400;
+  position: absolute;
+  right: .5em;
+  top: 0;
+  transition: opacity .1s ease-in-out;
+}
+
+.orderingForm input:focus + .form-input-innerFeedback,
+.orderingForm input:valid + .form-input-innerFeedback {
+  opacity: 0;
+}
+
+.aside-FAQ {
+  dt {
+    cursor: pointer;
+    font-family: $serif-stack;
+    font-size: 1.125em;
+    margin: 1rem 0 .5rem;
+    padding-bottom: .5rem;
+    width: 100%;
+
+    &:first-child {
+      border-top: .0625em solid $brand-border;
+      padding-top: 1rem;
+    }
+
+    a {
+      color: $color-body;
+      display: block;
+      font-family: $serif-stack;
+
+      &:visited {
+        color: $color-body;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $brand-red;
+        text-shadow: 1px 1px 3px $text-shadow;
+      }
+    }
+  }
+
+  dd {
+    border-bottom: .0625em solid $brand-border;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  li {
+    list-style: square;
+    margin-left: 1rem;
+
+    // Set to match the <p> of other <dd> tags.
+    &:last-child {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.FAQ-header-isCollapsed {
+  border-bottom: .0625em solid $brand-border;
+}
+
+.FAQ-isExpanded {
+  animation: slide-down .2s ease-in-out both;
+}
+
+.FAQ-isHidden {
+  display: none;
+}
+
+.ordering-contact {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+
+  h1 {
+    flex: 1 1 100%;
+  }
+}
+
+.contact-address {
+  display: flex;
+  flex: 1 1 45%;
+  flex-direction: column;
+}
+
+.contact-image {
+  align-items: flex-start;
+  display: flex;
+  flex: 1 1 55%;
+}
+
+@media screen and (min-width: 43.75em) {
+  .ordering {
+    flex-wrap: nowrap;
+  }
+
+  .ordering-main {
+    flex: 0 1 65%;
+  }
+
+  .ordering-aside {
+    flex: 0 1 30%;
+  }
+
+  .contact-image {
+    img {
+      width: 125%;
+    }
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .flex-column {
+    flex: 0 1 48%;
+  }
+}

@@ -1,0 +1,98 @@
+.site-footer {
+  background: $neutral;
+  font-size: .7777777778em;
+  margin-top: 6em;
+  position: relative;
+  z-index: 1; // z-index to obscure fixed scrolling content under the footer
+}
+
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 87.5rem;
+  padding: 0 1rem;
+  width: 100%;
+
+  a {
+    color: $color-body;
+    font-family: inherit;
+    line-height: 1.2em;
+    margin-bottom: .5em;
+
+
+    &:visited {
+      color: $color-body;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $brand-red;
+      text-shadow: 1px 1px 3px $text-shadow;
+    }
+  }
+
+  h3 {
+    font-size: 1.2857142857em;
+    font-variant: small-caps;
+  }
+
+  h4 {
+    font-family: $sans-serif-stack;
+    font-size: 1em;
+    font-weight: 400;
+  }
+}
+
+.footer-column-teas,
+.footer-column-company {
+  flex: 1 0 11em;
+  padding: 0 .5em;
+}
+
+.footer-column-social {
+  flex: 2 2 auto;
+  padding: 0 .5em;
+}
+
+.footer-column-contact {
+  flex: 3 1 20em;
+  padding: 0 .5em;
+}
+
+.social-icon {
+  fill: $brand-green;
+  height: 2em;
+  margin-right: 1em;
+  width: 2em;
+}
+
+.footer-after-wrap {
+  align-items: center;
+  background: $neutral-dark;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-after {
+  flex: 1 1 100%;
+
+  padding: 1em;
+
+  p {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 25em) {
+  .footer-wrap {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .footer-wrap {
+    padding: 0 4rem;
+  }
+}

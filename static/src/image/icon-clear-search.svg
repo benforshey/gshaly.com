@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-clear-search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-clear-search">
+            <path d="M0,10.915 C0,16.94416 4.88611349,21.83 10.915,21.83 C16.9419723,21.83 21.83,16.94416 21.83,10.915 C21.83,4.88611349 16.9419723,0 10.915,0 C4.88611349,0 0,4.88611349 0,10.915 Z" id="Shape" fill-opacity="0.6" fill="#868686"></path>
+            <polygon id="Path" fill="#FFFFFF" points="16.0266444 6.3229356 16.3210662 6.02134594 15.7322226 5.41816661 15.4378007 5.71975628 5.84371063 15.5474194 5.54928881 15.8490091 6.13813244 16.4521884 6.43255425 16.1505987"></polygon>
+            <polygon id="Path" fill="#FFFFFF" points="15.4378007 16.1505987 15.7322226 16.4521884 16.3210662 15.8490091 16.0266444 15.5474194 6.43255425 5.71975628 6.13813244 5.41816661 5.54928881 6.02134594 5.84371063 6.3229356"></polygon>
+        </g>
+    </g>
+</svg>
