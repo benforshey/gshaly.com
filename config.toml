@@ -1,4 +1,4 @@
-baseurl = "https://gshaly.com/"
+baseurl = "https://iw-gshaly.netlify.com/"
 languageCode = "en-us"
 
 SectionPagesMenu = "global"
