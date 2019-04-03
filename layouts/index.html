@@ -1,50 +1,103 @@
 {{- partial "header.html" . }}
 <div class="heroImage-wrap">
-    <img class="heroImage" src="dist/image/header-home.jpg"
-        alt="A beautiful tea farm in the morning sunrise at Doi Mae-Salong, Chiangrai province."
-        srcset="dist/image/header-home-mobile@1x.jpg 750w, dist/image/header-home-mobile@2x.jpg 1125w, dist/image/header-home@1x.jpg 1400w, dist/image/header-home@2x.jpg 2100w"
-        sizes="100vw"
-    >
-    <div class="heroImage-text">
-        <h1>the G.S. Haly Company</h1>
-        <p class="headerText-subheader h3">A Commitment to Specialty Tea Standards Since 1889</p>
-    </div>
-    <div class="heroImage-banner-wrap">
-        <img class="heroImage-banner" src="dist/image/gshaly-banner.png"
-            alt="Tea Revives the World"
-            srcset="dist/image/gshaly-banner.png 1x, dist/image/gshaly-banner@2x.png 2x"
-        >
-    </div>
+  {{ if eq (dateFormat "2006" now) "2019" }}
+  <img
+    class="heroImage-seal"
+    src="dist/image/gshaly-130-years.png"
+    alt="Celebrating 130 years of service to tea."
+  />
+  {{ end }}
+  <picture class="heroImage">
+    <source
+      media="(min-width: 40em)"
+      srcset="
+        dist/image/header-home@1x.jpg 1400w,
+        dist/image/header-home@2x.jpg 2100w
+      "
+    />
+    <source
+      srcset="
+        dist/image/header-home-mobile@1x.jpg  750w,
+        dist/image/header-home-mobile@2x.jpg 1125w
+      "
+    />
+    <img
+      class="heroImage"
+      src="dist/image/header-home.jpg"
+      alt="A beautiful tea farm in the morning sunrise at Doi Mae-Salong, Chiangrai province."
+    />
+  </picture>
+  <div class="heroImage-text">
+    <h1>the G.S. Haly Company</h1>
+    <p class="headerText-subheader h3">
+      <span class="headerText-subheaderDecorator">.</span>&nbsp;A Commitment to
+      Specialty Tea Standards Since 1889&nbsp;<span
+        class="headerText-subheaderDecorator"
+        >.</span
+      >
+    </p>
+  </div>
+  <div class="heroImage-banner-wrap">
+    <img
+      class="heroImage-banner"
+      src="dist/image/gshaly-banner.png"
+      alt="Tea Revives the World"
+      srcset="
+        dist/image/gshaly-banner.png    1x,
+        dist/image/gshaly-banner@2x.png 2x
+      "
+    />
+  </div>
 </div>
 <div class="body-wrap">
-    <div class="feature-wrap">
-        <div class="feature feature-ourTeas">
-            <a href="{{- .Site.BaseURL }}our-teas/">
-                <img src="dist/image/feature-ourteas.jpg"
-                    alt="representative grouping of teas"
-                    srcset="dist/image/feature-ourteas@1x.jpg 1x, dist/image/feature-ourteas@2x.jpg 2x"
-                >
-            </a>
-            <h2><a href="{{- .Site.BaseURL }}our-teas/">Our Teas</a></h2>
-        </div>
-        <div class="feature feature-ourStory">
-            <a href="{{- .Site.BaseURL }}about-us/">
-                <img src="dist/image/feature-clipper-ship.png"
-                    alt="GS Haly clipper ship"
-                    srcset="dist/image/feature-clipper-ship@1x.png 1x, dist/image/feature-clipper-ship@2x.png 2x"
-                >
-            </a>
-            <h2><a href="{{- .Site.BaseURL }}about-us/">Our Story</a></h2>
-        </div>
-        <div class="feature feature-ourPassion">
-            <a href="{{- .Site.BaseURL }}about-us/our-passion/?autoplay=true#our-passion">
-                <img src="dist/image/feature-video.jpg"
-                    alt="still frame of video about the GS Haly team"
-                    srcset="dist/image/feature-video@1x.jpg 1x, dist/image/feature-video@2x.jpg 2x"
-                >
-            </a>
-            <h2><a href="{{- .Site.BaseURL }}about-us/our-passion/?autoplay=true#our-passion">Our Passion</a></h2>
-        </div>
+  <div class="feature-wrap">
+    <div class="feature feature-ourTeas">
+      <a tabindex="-1" href="{{- .Site.BaseURL }}our-teas/">
+        <img
+          src="dist/image/feature-ourteas.jpg"
+          alt="representative grouping of teas"
+          srcset="
+            dist/image/feature-ourteas@1x.jpg 1x,
+            dist/image/feature-ourteas@2x.jpg 2x
+          "
+        />
+      </a>
+      <h2><a href="{{- .Site.BaseURL }}our-teas/">Our Teas</a></h2>
     </div>
+    <div class="feature feature-ourStory">
+      <a tabindex="-1" href="{{- .Site.BaseURL }}about-us/">
+        <img
+          src="dist/image/feature-clipper-ship.png"
+          alt="GS Haly clipper ship"
+          srcset="
+            dist/image/feature-clipper-ship@1x.png 1x,
+            dist/image/feature-clipper-ship@2x.png 2x
+          "
+        />
+      </a>
+      <h2><a href="{{- .Site.BaseURL }}about-us/">Our Story</a></h2>
+    </div>
+    <div class="feature feature-ourPassion">
+      <a
+        tabindex="-1"
+        href="{{- .Site.BaseURL }}about-us/our-passion/?autoplay=true#our-passion"
+      >
+        <img
+          src="dist/image/feature-video.jpg"
+          alt="still frame of video about the GS Haly team"
+          srcset="
+            dist/image/feature-video@1x.jpg 1x,
+            dist/image/feature-video@2x.jpg 2x
+          "
+        />
+      </a>
+      <h2>
+        <a
+          href="{{- .Site.BaseURL }}about-us/our-passion/?autoplay=true#our-passion"
+          >Our Passion</a
+        >
+      </h2>
+    </div>
+  </div>
 </div>
 {{- partial "footer.html" . }}

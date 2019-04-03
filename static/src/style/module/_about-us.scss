@@ -14,18 +14,24 @@
 .aboutUs-main {
   flex: 1 1 100%;
   flex-direction: row;
-  padding: .875em 0;
+  padding: 0.875em 0;
 
   h2 {
     &:first-of-type {
       margin-top: 1.5em;
     }
   }
+
+  ul {
+    list-style: disc inside;
+    line-height: 2.5;
+    padding-left: 2em;
+  }
 }
 
 .aboutUs-aside {
   flex: 1 1 100%;
-  padding: .875em 0;
+  padding: 0.875em 0;
 }
 
 .aside-passion {
@@ -84,24 +90,30 @@
   header {
     align-items: center;
     align-self: flex-end;
-    background:
-      // major tick
-      repeating-linear-gradient(90deg,
-          $grey-light 0, $grey-light .125em,
-          transparent .125em , transparent 6.25em
-      ) 50% no-repeat,
+    background: repeating-linear-gradient(
+          90deg,
+          $grey-light 0,
+          $grey-light 0.125em,
+          transparent 0.125em,
+          transparent 6.25em
+        )
+        50% no-repeat,
       // minor tick
-      repeating-linear-gradient(90deg,
-          $grey-light 0, $grey-light .125em,
-          transparent .125em, transparent 1.25em
-      ) 50% no-repeat;
+        repeating-linear-gradient(
+          90deg,
+          $grey-light 0,
+          $grey-light 0.125em,
+          transparent 0.125em,
+          transparent 1.25em
+        )
+        50% no-repeat;
     background-color: $grey-dark;
     background-size: 100% 80%, 100% 60%;
     display: flex;
     flex: 1 1 auto;
     height: 10vh;
     justify-content: space-between;
-    padding: .875em;
+    padding: 0.875em;
     width: 100%;
 
     .h3 {
@@ -111,11 +123,11 @@
 
     .h4 {
       color: $neutral-light;
-      font-size: .6em;
+      font-size: 0.6em;
     }
   }
 
-  header>h2 {
+  header > h2 {
     color: $neutral-light;
     display: inline;
     flex: 0 1 80%;
@@ -124,7 +136,7 @@
     text-align: center;
   }
 
-  header>ol {
+  header > ol {
     display: none;
     flex: 1 2 100%;
     justify-content: space-around;
@@ -132,7 +144,7 @@
     order: 1;
   }
 
-  li>a {
+  li > a {
     color: $neutral-light;
     font-size: 1em;
   }
@@ -153,7 +165,7 @@
     order: 0;
   }
 
-  header>ol {
+  header > ol {
     display: none;
   }
 
@@ -167,8 +179,8 @@
 
 .cover-text {
   background: $neutral-light-cover;
-  border-bottom: .125em solid $brand-green;
-  border-top: .125em solid $brand-green;
+  border-bottom: 0.125em solid $brand-green;
+  border-top: 0.125em solid $brand-green;
   margin-bottom: 1em;
   padding: 1em;
   text-align: center;
@@ -228,7 +240,7 @@
   overflow-y: scroll;
   padding: 1em;
 
-  &>div {
+  & > div {
     margin: 0 auto 4em;
     max-width: 40em;
   }
@@ -241,7 +253,6 @@
     font-family: $serif-stack;
     font-size: 1.125em;
   }
-
 }
 
 .timeline-image {
@@ -251,67 +262,68 @@
 }
 
 #cover-start .section-flexGroup {
-  background: url('../image/timeline-01.png') center 10% no-repeat, $neutral-light;
+  background: url("../image/timeline-01.png") center 10% no-repeat,
+    $neutral-light;
   background-size: contain;
 }
 
 #origins .timeline-image {
-  background: url('../image/timeline-02.jpg') center 20% no-repeat;
+  background: url("../image/timeline-02.jpg") center 20% no-repeat;
   background-size: cover;
 }
 
 #growth .timeline-image {
-  background: url('../image/timeline-03.jpg') center 20% no-repeat;
+  background: url("../image/timeline-03.jpg") center 20% no-repeat;
   background-size: cover;
 }
 
 #rebuilding .timeline-image {
-  background: url('../image/timeline-04.jpg') center center no-repeat;
+  background: url("../image/timeline-04.jpg") center center no-repeat;
   background-size: cover;
 }
 
 #blockades .timeline-image {
-  background: url('../image/timeline-05.jpg') center center no-repeat;
+  background: url("../image/timeline-05.jpg") center center no-repeat;
   background-size: cover;
 }
 
 #the-young-apprentice .timeline-image {
-  background: url('../image/timeline-06.jpg') center 20% no-repeat;
+  background: url("../image/timeline-06.jpg") center 20% no-repeat;
   background-size: cover;
 }
 
 #wwii-and-beyond .timeline-image {
-  background: url('../image/timeline-07.jpg') center center no-repeat;
+  background: url("../image/timeline-07.jpg") center center no-repeat;
   background-size: cover;
 }
 
 #tea-in-the-west .timeline-image {
-  background: url('../image/timeline-08.jpg') center center no-repeat;
+  background: url("../image/timeline-08.jpg") center center no-repeat;
   background-size: cover;
 }
 
 #marie-spillane .timeline-image {
-  background: url('../image/timeline-09.jpg') center 20% no-repeat;
+  background: url("../image/timeline-09.jpg") center 20% no-repeat;
   background-size: cover;
 }
 
 #specialty-tea .timeline-image {
-  background: url('../image/timeline-10.jpg') center center no-repeat;
+  background: url("../image/timeline-10.jpg") center center no-repeat;
   background-size: cover;
 }
 
 #cafe-culture .timeline-image {
-  background: url('../image/timeline-11.jpg') center center no-repeat;
+  background: url("../image/timeline-11.jpg") center center no-repeat;
   background-size: cover;
 }
 
 #michael-spillane .timeline-image {
-  background: url('../image/timeline-12.jpg') center 20% no-repeat;
+  background: url("../image/timeline-12.jpg") center 20% no-repeat;
   background-size: cover;
 }
 
 #the-gs-haly-company .timeline-image {
-  background: url('../image/timeline-13.jpg') center center no-repeat;
+  background: url("../image/timeline-13.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -327,7 +339,6 @@
   }
 
   section > div {
-
     &:first-child {
       flex: 0 1 80%;
       margin: 0 0 1em;
@@ -343,7 +354,7 @@
   }
 
   div > img {
-    margin-top: .4444444444em;
+    margin-top: 0.4444444444em;
   }
 
   div > blockquote {
@@ -362,7 +373,7 @@
 }
 
 .ourPassion-videoWrapper::before {
-  content: '';
+  content: "";
   display: block;
   padding-top: 56.25%;
   width: 100%;
@@ -398,7 +409,7 @@
       order: 3;
     }
 
-    header>ol {
+    header > ol {
       display: flex;
       order: 0;
     }
@@ -432,7 +443,7 @@
   }
 
   .aboutUs-aside {
-    border-left: .0625em solid $brand-border;
+    border-left: 0.0625em solid $brand-border;
     flex: 1 1 25%;
     padding: 3em 1.5em;
 
@@ -458,7 +469,6 @@
 }
 
 @media screen and (min-width: 60em) {
-
   section:nth-of-type(even) div.timeline-image {
     order: 1;
   }
@@ -472,19 +482,19 @@
       }
     }
 
-    header>ol {
+    header > ol {
       display: flex;
       flex: 1 1 60%;
       margin: 0;
       order: 0;
     }
 
-    header>h2 {
+    header > h2 {
       flex: 0 1 30%;
     }
 
-    ol>li {
-      padding: 0 .5em;
+    ol > li {
+      padding: 0 0.5em;
     }
   }
 
