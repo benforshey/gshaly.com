@@ -8,11 +8,11 @@
   },
   "devDependencies": {
     "autoprefixer": "7.2.6",
-    "babel-core": "6.26.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "7.1.2",
     "babel-minify-webpack-plugin": "0.3.0",
-    "babel-preset-env": "1.6.1",
-    "node-sass": "4.7.2",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.11.0",
     "onchange": "3.3.0",
     "parallelshell": "3.0.2",
     "postcss-cli": "5.0.0",
@@ -25,7 +25,7 @@
     "style.build": "npm run style.sass && npm run style.autoprefixer",
     "style.watch": "onchange './static/src/style/**/*' -- npm run style.build",
     "script.build": "webpack",
-    "build": "npm run style.build & npm run script.build",
+    "build": "npm run style.build && npm run script.build && hugo",
     "watch": "npm run style.watch & npm run script.watch"
   },
   "repository": {
