@@ -9,7 +9,9 @@ const navigation = {
   init() {
     const navButton = document.querySelector(".navTrigger-label-header")
 
-    navButton.addEventListener("keydown", this.toggleNav)
+    if (navButton) {
+      return navButton.addEventListener("keydown", this.toggleNav)
+    }
   },
 }
 

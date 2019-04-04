@@ -5,7 +5,6 @@ import { addEventToArray, setActivePage, determinePage } from "./module/utility"
 import navigation from "./module/navigation"
 import masterProductList from "./module/masterProductList"
 import * as ordering from "./module/ordering"
-import scroll from "./module/scroll"
 import timeline from "./module/timeline"
 import teaKnowledge from "./module/teaKnowledge"
 
@@ -14,26 +13,6 @@ function docReady(callback) {
     return callback()
   }
   return document.addEventListener("DOMContentLoaded", callback)
-}
-
-function setSmoothScrollOnAllHash() {
-  // Get all links on the page with the hash property (mostly internal links).
-  const links = Array.from(document.getElementsByTagName("a")).filter(
-    el => el.hash
-  )
-  addEventToArray(
-    {
-      event: "click",
-      arr: links,
-    },
-    event => {
-      event.preventDefault()
-      scroll(event.target.hash, {
-        duration: 250,
-        offset: -16,
-      })
-    }
-  )
 }
 
 function siteInit() {
@@ -55,9 +34,6 @@ function siteInit() {
 
   // Set section nav active link.
   setActivePage(document.querySelectorAll(".section-nav a"))
-
-  // Set smooth scrolling default on all page links.
-  setSmoothScrollOnAllHash()
 }
 
 if ("serviceWorker" in navigator) {
