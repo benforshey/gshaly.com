@@ -34,7 +34,7 @@ const cacheURIs = [
   // Style
   "/dist/style/main.css_v1.0.0",
   // Script
-  "/dist/script/bundle.js",
+  "/dist/script/bundle_v1.0.0.js",
   // Images
   "dist/images/header-home.jpg",
   // Fonts
