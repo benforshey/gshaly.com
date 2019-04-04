@@ -32,7 +32,7 @@ const cacheURIs = [
   "/tea-knowledge/matching-a-standard/",
   "/404.html",
   // Style
-  "/dist/style/main.css_v1.0.0",
+  "/dist/style/main_v1.0.0.css",
   // Script
   "/dist/script/bundle_v1.0.0.js",
   // Images
