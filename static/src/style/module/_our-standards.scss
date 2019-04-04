@@ -17,11 +17,12 @@
 
   li {
     list-style: none outside;
+    margin-bottom: 1em;
     position: relative;
 
     &::before {
       color: $color-body;
-      content: '◆';
+      content: "◆";
       left: -1em;
       position: absolute;
     }
@@ -32,7 +33,7 @@
   flex: 1 1 100%;
   padding: 0 1.5em;
 
-  section>img {
+  section > img {
     width: auto;
   }
 }
@@ -48,11 +49,11 @@
   }
 
   .ourStandards-aside {
-    border-left: .0625em solid $brand-border;
+    border-left: 0.0625em solid $brand-border;
     flex: 1 1 25%;
     padding: 3em 1.5em;
 
-    section>img {
+    section > img {
       width: 100%;
     }
   }

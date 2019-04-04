@@ -6,7 +6,7 @@
 }
 
 .teaKnowledge-nav {
-  box-shadow: 0 .125em 0 0 $brand-border;
+  box-shadow: 0 0.125em 0 0 $brand-border;
   flex: 1 1 100%;
   margin-bottom: 2em;
   padding: 0 1em;
@@ -32,20 +32,20 @@
 
     &::before {
       color: $brand-green;
-      content: '◆';
+      content: "◆";
       margin-left: -1.25em;
-      margin-right: .5em;
+      margin-right: 0.5em;
     }
   }
 }
 
 .teaKnowledge-tableOfContents {
   list-style: square;
-  margin: 0 0 .5em 1em;
+  margin: 0 0 0.5em 1em;
 
   a {
     font-family: $sans-serif-stack;
-    font-size: .875em;
+    font-size: 0.875em;
     font-weight: 300;
     vertical-align: middle;
 
@@ -58,7 +58,7 @@
     }
 
     &:focus {
-      box-shadow: 0 .0625em 0 0 $brand-red;
+      box-shadow: 0 0.0625em 0 0 $brand-red;
       outline: none;
     }
   }
@@ -81,11 +81,12 @@
 
   li {
     list-style: none outside;
+    margin-bottom: 1em;
     position: relative;
 
     &::before {
       color: $color-body;
-      content: '◆';
+      content: "◆";
       left: -1em;
       position: absolute;
     }

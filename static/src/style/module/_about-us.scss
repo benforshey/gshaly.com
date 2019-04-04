@@ -23,9 +23,20 @@
   }
 
   ul {
-    list-style: disc inside;
-    line-height: 2.5;
-    padding-left: 2em;
+    margin-left: 2em;
+  }
+
+  li {
+    list-style: none outside;
+    margin-bottom: 1em;
+    position: relative;
+
+    &::before {
+      color: $color-body;
+      content: "◆";
+      left: -1em;
+      position: absolute;
+    }
   }
 }
 
