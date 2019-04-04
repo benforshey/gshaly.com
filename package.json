@@ -22,8 +22,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "style.autoprefixer": "postcss --use autoprefixer --no-map --replace ./static/dist/style/main.css",
-    "style.sass": "node-sass --output-style compressed --omit-source-map-url true ./static/src/style/main.scss ./static/dist/style/main.css",
+    "style.autoprefixer": "postcss --use autoprefixer --no-map --replace ./static/dist/style/main_v1.0.0.css",
+    "style.sass": "node-sass --output-style compressed --omit-source-map-url true ./static/src/style/main.scss ./static/dist/style/main.css_v1.0.0",
     "style.build": "npm run style.sass && npm run style.autoprefixer",
     "style.watch": "onchange './static/src/style/**/*' -- npm run style.build",
     "script.build": "webpack",
