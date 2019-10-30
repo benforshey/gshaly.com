@@ -77,12 +77,14 @@ const FAQ = {
     }
     FAQ.FAQHeaders.map(el => {
       el.classList.add("FAQ-header-isCollapsed")
+      el.setAttribute('aria-expanded', 'false')
       return el.nextElementSibling.classList.add("FAQ-isHidden")
     })
     event.target.parentElement.classList.remove("FAQ-header-isCollapsed")
     event.target.parentElement.nextElementSibling.classList.remove(
       "FAQ-isHidden"
     )
+    event.target.parentElement.setAttribute('aria-expanded', 'true')
     event.target.parentElement.nextElementSibling.classList.add(
       "FAQ-isExpanded"
     )
@@ -95,8 +97,13 @@ const FAQ = {
 
     // Initially, set hidden on all FAQ items but the first.
     this.FAQHeaders.map((el, idx) => {
+      if (idx === 0) {
+        el.setAttribute('aria-expanded', 'true')
+      }
+
       if (idx > 0) {
         el.nextElementSibling.classList.add("FAQ-isHidden")
+        el.setAttribute('aria-expanded', 'false')
         return el.classList.add("FAQ-header-isCollapsed")
       }
     })

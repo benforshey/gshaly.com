@@ -4,8 +4,8 @@
     <title>icon-arrow-dark</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.7">
-        <g id="Artboard" transform="translate(-73.000000, -102.000000)">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.7">
+        <g transform="translate(-73.000000, -102.000000)">
             <g id="icon-arrow-dark" transform="translate(73.500000, 102.750000)">
                 <path d="M0,0.0003 L7.668,14.2608 L0,28.5198 L34.5105,14.2608 L0,0.0003 Z M3.312,2.9913 L30.582,14.2608 L9.372,14.2608 L3.312,2.9913 Z" id="Fill-1" fill="#554C4A"></path>
                 <polygon id="Fill-2" fill="#FFFFFF" points="3.3117 2.99145 30.5817 14.25945 9.3717 14.25945"></polygon>
