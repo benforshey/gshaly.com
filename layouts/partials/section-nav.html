@@ -1,5 +1,5 @@
 {{- if eq .Params.sectionnav true }}
-<nav class="section-nav">
+<nav aria-label="Page-Level Navigation" class="section-nav">
     <ul>
     {{- range (index .Site.Data.nav .Section) }}
         {{- range . }}

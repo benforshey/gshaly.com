@@ -88,8 +88,8 @@
                             <p>{{ . | markdownify }}</p>
                         {{- end }}
                         {{- with index $teaObject $additional_information }}
-                        <button class="description-accordion-control" aria-controls="{{- index $teaObject $line_number }}" aria-expanded="false">show more >></button>
-                        <div id="{{- index $teaObject $line_number }}" class="description-content-isCollapsed" aria-hidden="true">
+                        <button class="description-accordion-control" aria-controls="{{- index $teaObject $line_number}}-{{- replace (index $teaObject $name) " " "-" }}" aria-expanded="false">show more >></button>
+                        <div id="{{- index $teaObject $line_number}}-{{- replace (index $teaObject $name) " " "-" }}" class="description-content-isCollapsed" aria-hidden="true">
                             <p>{{- . | markdownify }}</p>
                         </div>
                         {{- end }}

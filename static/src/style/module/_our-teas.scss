@@ -753,7 +753,8 @@ input[type='checkbox'][disabled] + .listing-checkbox-svg > .checkbox-outer {
     transform: translate3d(0, 0, 0);
   }
 
-  .navTrigger-label-filter {
+  .navTrigger-label-filter,
+  .navTrigger-filter {
     display: none;
   }
 
