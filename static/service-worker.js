@@ -32,9 +32,9 @@ const cacheURIs = [
   "/tea-knowledge/matching-a-standard/",
   "/404.html",
   // Style
-  "/dist/style/main_v1.0.0.css",
+  "/dist/style/main_v1.0.1.css",
   // Script
-  "/dist/script/bundle_v1.0.0.js",
+  "/dist/script/bundle_v1.0.1.js",
   // Images
   "dist/images/header-home.jpg",
   // Fonts
@@ -99,7 +99,7 @@ self.addEventListener("fetch", event => {
   if (event.request.method !== "GET") {
     console.log(
       `WORKER: is only set to respond to 'GET' requests. Fetch event '${
-        event.request.method
+      event.request.method
       }' ignored for URL '${event.request.url}'`
     )
 
