@@ -15,7 +15,7 @@
     <title>{{ .Title }} | The GS Haly Company</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{- if .Description }}{{- .Description | markdownify }}{{- else }}{{- "GS Haly is the oldest tea importer in the US with more than 127 years of global trade experience. Our quality standards are unparalleled and guaranteed." }}{{- end }}">
-    <link rel="stylesheet" href="/dist/style/main_v1.0.0.css">
+    <link rel="stylesheet" href="/dist/style/main_v1.0.1.css">
     <!-- Favicon Links and Meta-->
     <link rel="apple-touch-icon" sizes="180x180" href="{{- .Site.BaseURL }}apple-touch-icon.png">
     <link rel="icon" type="image/png" href="{{- .Site.BaseURL }}favicon-32x32.png" sizes="32x32">
@@ -78,19 +78,20 @@
 <body>
 {{- if ne .Params.header false }}
 <header class="site-header" role="banner">
-    <nav class="header-wrap" role="navigation">
+    <nav aria-label="Site-Level Navigation" class="header-wrap" role="navigation">
         <div class="header-logo">
-            <a href="{{- .Site.BaseURL }}" tabindex="1"><img tabindex="-1" src="{{- .Site.BaseURL }}dist/image/gshaly-logo.png" alt="The GS Haly Company | Importing Fine Teas Since 1889"></a>
+            <a href="{{- .Site.BaseURL }}" tabindex="0"><img tabindex="-1" src="{{- .Site.BaseURL }}dist/image/gshaly-logo.png" alt="The GS Haly Company | Importing Fine Teas Since 1889"></a>
         </div>
-        <label for="navTrigger-header" class="navTrigger-label-header" tabindex="1">Menu&nbsp;
+        <label for="navTrigger-header" class="navTrigger-label-header" tabindex="0">Menu&nbsp;
             <svg class="navTrigger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 20">
                 <title>Menu Icon</title>
                 <desc>This icon opens and closes a menu.</desc>
                 <path fill="#544C4A" fill-rule="evenodd" d="M0 0h25v4H0zm0 8h25v4H0zm0 8h25v4H0z"/>
             </svg>
         </label>
-        <input id="navTrigger-header" class="navTrigger navTrigger-header" type="checkbox">
-        <ul class="header-navList">
+        <!-- todo: need aria-checked controlled by JS -->
+        <input role="switch" aria-controls="navList-header" id="navTrigger-header" class="navTrigger navTrigger-header" type="checkbox">
+        <ul id="navList-header" class="header-navList">
         {{- $currentNode := . }}
         {{- range $index, $element := .Site.Menus.global }}
             <li class="navList-link">

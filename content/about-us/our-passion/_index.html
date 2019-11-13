@@ -4,38 +4,48 @@ title = "Our Passion"
 description = "Our passion is to seek out the highest-quality replicable teas that are authentic and have integrity in the cut."
 sectionNav = true
 heroImage = [
-    "illustration of Camellia sinensis plant",
-    "dist/image/header-our-passion.jpg",
-    "dist/image/header-our-passion@1x.jpg",
-    "dist/image/header-our-passion@2x.jpg"
+"illustration of Camellia sinensis plant",
+"dist/image/header-our-passion.jpg",
+"dist/image/header-our-passion@1x.jpg",
+"dist/image/header-our-passion@2x.jpg"
 ]
 
 +++
-<div class="body-wrap">
-    <div id="our-passion" class="ourPassion-videoWrapper">
-        <iframe id="our-passion-video" class="ourPassion-video" width="100%" src="https://www.youtube.com/embed/PIWUhJHeE6c?rel=0&enablejsapi=1&controls=2&modestbranding=1" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <script type="text/javascript">
-        var asyncScript = document.createElement('script')
-        asyncScript.id = 'video-script'
-        asyncScript.src = 'https://www.youtube.com/iframe_api'
 
-        var firstScript = document.getElementsByTagName('script')[0]
-        firstScript.parentNode.insertBefore(asyncScript, firstScript)
+<main class="body-wrap">
+  <h1 data-visually-hidden>Our Passion</h1>
+  <div id="our-passion" class="ourPassion-videoWrapper">
+    <iframe
+      title="Our Passion"
+      id="our-passion-video"
+      class="ourPassion-video"
+      width="100%"
+      src="https://www.youtube.com/embed/PIWUhJHeE6c?rel=0&enablejsapi=1&controls=2&modestbranding=1"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <script type="text/javascript">
+    var asyncScript = document.createElement("script");
+    asyncScript.id = "video-script";
+    asyncScript.src = "https://www.youtube.com/iframe_api";
 
-        function onYouTubeIframeAPIReady() {
-            var checkForAutoplay = function () {
-                if (window.location.search.indexOf('autoplay=true') !== -1) {
-                    return player.playVideo()
-                } else {
-                    return
-                }
-            }
-            var player = new YT.Player('our-passion-video', {
-                events: {
-                    'onReady': checkForAutoplay
-                }
-            })
+    var firstScript = document.getElementsByTagName("script")[0];
+    firstScript.parentNode.insertBefore(asyncScript, firstScript);
+
+    function onYouTubeIframeAPIReady() {
+      var checkForAutoplay = function() {
+        if (window.location.search.indexOf("autoplay=true") !== -1) {
+          return player.playVideo();
+        } else {
+          return;
         }
-    </script>
-</div>
+      };
+      var player = new YT.Player("our-passion-video", {
+        events: {
+          onReady: checkForAutoplay
+        }
+      });
+    }
+  </script>
+</main>

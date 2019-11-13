@@ -1,8 +1,7 @@
 {{- if .Params.heroimage }}
-<div class="heroImage-wrap">
-    <img class="heroImage" src="{{- .Site.BaseURL }}{{- index .Params.heroimage 1 }}"
-        alt="{{- index .Params.heroimage 0 }}"
-        srcset="{{ .Site.BaseURL }}{{ index .Params.heroimage 2 }} 1x, {{ .Site.BaseURL }}{{ index .Params.heroimage 3 }} 2x"
-    >
+<div role="region" class="heroImage-wrap">
+  <img class="heroImage" src="{{- .Site.BaseURL }}{{- index .Params.heroimage 1 }}"
+    alt="{{- index .Params.heroimage 0 }}"
+    srcset="{{ .Site.BaseURL }}{{ index .Params.heroimage 2 }} 1x, {{ .Site.BaseURL }}{{ index .Params.heroimage 3 }} 2x" />
 </div>
 {{- end }}
