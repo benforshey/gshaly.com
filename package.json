@@ -1,6 +1,6 @@
 {
   "name": "gshaly",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "official website of the GS Haly Co",
   "main": "index.html",
   "dependencies": {
@@ -20,6 +20,9 @@
     "postcss-cli": "5.0.0",
     "webpack": "3.11.0"
   },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
+  },  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "style.autoprefixer": "postcss --use autoprefixer --no-map --replace ./static/dist/style/main_v1.0.1.css",
