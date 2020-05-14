@@ -1,6 +1,9 @@
 baseurl = "https://www.gshaly.com/"
 languageCode = "en-us"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 SectionPagesMenu = "global"
 [[menu.global]]
     name = "Home"

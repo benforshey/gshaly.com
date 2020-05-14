@@ -22,7 +22,7 @@
   },
   "resolutions": {
     "graceful-fs": "4.2.3"
-  },  
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "style.autoprefixer": "postcss --use autoprefixer --no-map --replace ./static/dist/style/main_v1.0.1.css",
@@ -31,7 +31,7 @@
     "style.watch": "onchange './static/src/style/**/*' -- npm run style.build",
     "script.build": "webpack",
     "script.watch": "onchange './static/src/script/**/*' -- npm run script.build",
-    "build": "npm run style.build && npm run script.build && hugo",
+    "build": "npm run style.build && npm run script.build && hugo --ignoreCache",
     "watch": "npm run style.watch & npm run script.watch"
   },
   "repository": {
