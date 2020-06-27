@@ -18,7 +18,6 @@ export default (req: NowRequest, res: NowResponse) => {
       client
         .sendEmail({
           From: "teainfo@gshaly.com",
-          // * set in Vercel: CLIENT_EMAIL=teainfo@gshaly.com
           To: process.env.CLIENT_EMAIL,
           Subject: "GS Haly Ordering Form",
           HtmlBody: `<p>${fields["first-name"]} ${fields["last-name"]} of ${fields["business-name"]} is interested in the following products:</p><p>${fields.products}</p><p><b>Contact Information</b><br>Business Name: ${fields["business-name"]}<br>Primary Business Type: ${fields["business-type"]}<br>Email Address: ${fields.email}<br>Phone Number: ${fields.phone}<br>Location: ${fields.location}</p><p><b>Additional Comments</b><br>${fields.comments}</p>`,
