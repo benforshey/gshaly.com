@@ -1,3 +1,4 @@
-public/**/*
-.vercel
 .env
+.vercel
+node_modules
+public/**/*

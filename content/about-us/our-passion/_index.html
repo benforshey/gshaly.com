@@ -15,37 +15,34 @@ heroImage = [
 <main class="body-wrap">
   <h1 data-visually-hidden>Our Passion</h1>
   <div id="our-passion" class="ourPassion-videoWrapper">
-    <iframe
-      title="Our Passion"
-      id="our-passion-video"
-      class="ourPassion-video"
-      width="100%"
-      src="https://www.youtube.com/embed/PIWUhJHeE6c?rel=0&enablejsapi=1&controls=2&modestbranding=1"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+    <div id="our-passion-video" class="ourPassion-video"></div>
   </div>
   <script type="text/javascript">
     var asyncScript = document.createElement("script");
     asyncScript.id = "video-script";
     asyncScript.src = "https://www.youtube.com/iframe_api";
 
-    var firstScript = document.getElementsByTagName("script")[0];
-    firstScript.parentNode.insertBefore(asyncScript, firstScript);
+    document.head.insertAdjacentElement("beforeend", asyncScript);
+
+    var player;
 
     function onYouTubeIframeAPIReady() {
-      var checkForAutoplay = function() {
-        if (window.location.search.indexOf("autoplay=true") !== -1) {
-          return player.playVideo();
-        } else {
-          return;
-        }
-      };
-      var player = new YT.Player("our-passion-video", {
+      player = new YT.Player("our-passion-video", {
+        videoId: "PIWUhJHeE6c",
         events: {
-          onReady: checkForAutoplay
+          "onReady": checkForAutoplay
+        },
+        playerVars: {
+          "allowfullscreen": 1,
+          "modestbranding": 1,
         }
       });
+
+      function checkForAutoplay(event) {
+        if (window.location.search.indexOf("autoplay=true") !== -1) {
+          event.target.playVideo();
+        } 
+      };
     }
   </script>
 </main>
