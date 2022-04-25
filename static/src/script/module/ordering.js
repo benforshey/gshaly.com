@@ -1,5 +1,4 @@
 /* eslint-env browser */
-/* global ga */
 
 const form = {
   // Set the value from localStorage into the textbox and clear localStorage.
@@ -37,19 +36,9 @@ const form = {
         }
 
         form.button.innerText = "request sent";
-        ga("send", "event", {
-          // since GA is loaded in the head, assume its presence
-          eventCategory: "Form",
-          eventAction: "send",
-        });
         return form.orderingForm.reset();
       })
       .catch((error) => {
-        ga("send", "exception", {
-          // since GA is loaded in the head, assume its presence
-          exDescription: "form send failure",
-        });
-
         form.button.innerText = "error in sending";
 
         window.setTimeout(() => {
