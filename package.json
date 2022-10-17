@@ -4,7 +4,6 @@
   "description": "official website of the GS Haly Co",
   "main": "index.html",
   "dependencies": {
-    "@now/node": "^1.8.5",
     "babel-polyfill": "6.26.0",
     "dotenv": "^8.6.0",
     "formidable": "^1.2.6",
@@ -16,7 +15,7 @@
     "babel-loader": "7.1.2",
     "babel-minify-webpack-plugin": "0.3.0",
     "babel-preset-env": "^1.7.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^6.0.1",
     "onchange": "3.3.0",
     "postcss-cli": "5.0.0",
     "webpack": "3.11.0"
@@ -44,5 +43,8 @@
   "bugs": {
     "url": "https://github.com/benforshey/gshaly.com/issues"
   },
-  "homepage": "https://github.com/benforshey/gshaly.com#readme"
+  "homepage": "https://github.com/benforshey/gshaly.com#readme",
+  "engines": {
+    "node": "16.x"
+  }
 }
