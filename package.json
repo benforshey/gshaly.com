@@ -10,14 +10,14 @@
     "postmark": "^2.9.5"
   },
   "devDependencies": {
-    "autoprefixer": "7.2.6",
+    "autoprefixer": "10.4.13",
     "babel-core": "^6.26.3",
     "babel-loader": "7.1.2",
     "babel-minify-webpack-plugin": "0.3.0",
     "babel-preset-env": "^1.7.0",
     "node-sass": "^6.0.1",
     "onchange": "3.3.0",
-    "postcss-cli": "5.0.0",
+    "postcss-cli": "10.1.0",
     "webpack": "3.11.0"
   },
   "resolutions": {
