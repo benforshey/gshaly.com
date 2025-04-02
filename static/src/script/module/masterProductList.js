@@ -343,12 +343,12 @@ const listing = {
         // Set a temporary array to push this element's results into.
         const queryFound = [];
         // Set searchable inner text to same case as query string.
-        const conditionedInnerText = element.innerText.toLowerCase();
+        const conditionedInnerText = element?.innerText.toLowerCase();
         // Map searchable 'data-filter' attributes into array.
         const queryDataFilter = Array.from(
           element.querySelectorAll("[data-filter]"),
         ).map((element) => {
-          return element.dataset.filter.toLowerCase();
+          return element?.dataset.filter.toLowerCase();
         });
 
         queryFound.push(
@@ -373,12 +373,12 @@ const listing = {
         // Create separate results array, because I later iterate over enumberables in queryFound.
         const results = [];
         // Set searchable inner text to same case as query string.
-        const conditionedInnerText = element.innerText.toLowerCase();
+        const conditionedInnerText = element?.innerText.toLowerCase();
         // Map searchable 'data-filter' attributes into array.
         const queryDataFilter = Array.from(
           element.querySelectorAll("[data-filter]"),
         ).map((element) => {
-          return element.dataset.filter.toLowerCase();
+          return element?.dataset.filter.toLowerCase();
         });
 
         // Map over split query.
@@ -431,12 +431,12 @@ const listing = {
         // Create separate results array, because I later iterate over enumberables in queryFound.
         const results = [];
         // Set searchable inner text to same case as query string.
-        const conditionedInnerText = element.innerText.toLowerCase();
+        const conditionedInnerText = element?.innerText.toLowerCase();
         // Map searchable 'data-filter' attributes into array.
         const queryDataFilter = Array.from(
           element.querySelectorAll("[data-filter]"),
         ).map((element) => {
-          return element.dataset.filter.toLowerCase();
+          return element?.dataset.filter.toLowerCase();
         });
 
         // Map over split query.
