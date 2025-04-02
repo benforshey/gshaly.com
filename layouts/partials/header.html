@@ -34,34 +34,38 @@
     <meta property="og:site_name" content="{{ .Title }} | The G.S. Haly Company">
     <meta name="twitter:image:alt" content="a gently sloping field of tea plants with sunshine breaking through an overcast sky">
     <script type="application/ld+json">
-        [
-            {
-                "@context": "http://schema.org",
-                "@type": "WebSite",
-                "name": "The G.S. Haly Company",
-                "alternateName": "G.S. Haly",
-                "url": "https://gshaly.com"
-            },
-            {
-                "@context": "http://schema.org",
-                "@type": "Organization",
-                "url": "https://gshaly.com",
-                "logo": "https://gshaly.com/dist/image/gshaly-logo.png",
-                "sameAs": "https://www.facebook.com/The-GS-Haly-Company-157772950922977/"
-            },
-            {
-                "@context": "http://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [{{- range $.Scratch.Get "breadcrumb" }}{{- if ne .position 1 }},{{- end }}{
-                    "@type": "ListItem",
-                    "position": {{- .position }},
-                    "item": {
-                    "@id": "{{- .url }}",
-                    "name": "{{- .name }}"
+        {
+            "@context": "http://schema.org",
+            "@graph":
+                [
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "WebSite",
+                        "name": "The G.S. Haly Company",
+                        "alternateName": "G.S. Haly",
+                        "url": "https://gshaly.com"
+                    },
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "Organization",
+                        "url": "https://gshaly.com",
+                        "logo": "https://gshaly.com/dist/image/gshaly-logo.png",
+                        "sameAs": "https://www.facebook.com/The-GS-Haly-Company-157772950922977/"
+                    },
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [{{- range $.Scratch.Get "breadcrumb" }}{{- if ne .position 1 }},{{- end }}{
+                            "@type": "ListItem",
+                            "position": {{- .position }},
+                            "item": {
+                            "@id": "{{- .url }}",
+                            "name": "{{- .name }}"
+                            }
+                        }{{- end }}]
                     }
-                }{{- end }}]
-            }
-        ]
+                ]
+        }
     </script>
     <!-- Styles and Scripts -->
     <link rel="stylesheet" href="/dist/style/main_v1.0.1.css">
