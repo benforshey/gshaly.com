@@ -4,6 +4,7 @@
   "description": "official website of the GS Haly Co",
   "main": "index.html",
   "dependencies": {
+    "@now/node": "^1.8.5",
     "dotenv": "^8.6.0",
     "formidable": "^1.2.6",
     "postmark": "^2.9.5"
@@ -14,6 +15,7 @@
     "postcss-cli": "5.0.0",
     "sass": "^1.86.1",
     "terser-webpack-plugin": "^5.3.14",
+    "typescript": "^5.9.2",
     "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1"
   },
