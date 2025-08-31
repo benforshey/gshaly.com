@@ -1,6 +1,6 @@
 /* eslint-env worker */
 const cacheName = "offlineFirst";
-const cacheVersion = "v0.0.15";
+const cacheVersion = "v0.0.16-6";
 const cacheURIs = [
   // If any file in this list fails, the whole service worker fails to install.
   // Pages
@@ -53,6 +53,9 @@ const errorText = `
 
 self.addEventListener("install", (event) => {
   console.log(`WORKER: ${event.type} started`);
+
+  self.skipWaiting();
+
   event.waitUntil(
     caches
       .open(`${cacheName}, ${cacheVersion}`)
@@ -62,7 +65,7 @@ self.addEventListener("install", (event) => {
       })
       .then(() => {
         console.log(`WORKER: ${event.type} completed`);
-      })
+      }),
   );
 });
 
@@ -76,36 +79,36 @@ self.addEventListener("activate", (event) => {
           keys
             .filter(
               (
-                key // Filter over the keys array.
+                key, // Filter over the keys array.
               ) =>
                 // Return an array of caches not starting with the cacheName and ending with the
                 // cacheVersion.
-                !(key.startsWith(cacheName) && key.endsWith(cacheVersion))
+                !(key.startsWith(cacheName) && key.endsWith(cacheVersion)),
             )
             .map(
               (
-                key // Map over the filtered array.
-              ) => caches.delete(key) // Delete the caches, fulfilling the promise.
-            )
-        )
+                key, // Map over the filtered array.
+              ) => caches.delete(key), // Delete the caches, fulfilling the promise.
+            ),
+        ),
       )
       .then(() => {
         console.log("WORKER: activate completed.");
-      })
+      }),
   );
 });
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") {
     console.log(
-      `WORKER: is only set to respond to 'GET' requests. Fetch event '${event.request.method}' ignored for URL '${event.request.url}'`
+      `WORKER: is only set to respond to 'GET' requests. Fetch event '${event.request.method}' ignored for URL '${event.request.url}'`,
     );
 
     const request = event.request;
 
     return event.respondWith(
       // Return the browser's original request, basically passing it through.
-      fetch(request)
+      fetch(request),
     );
   }
   event.respondWith(
@@ -128,7 +131,7 @@ self.addEventListener("fetch", (event) => {
         const cacheCopy = response.clone();
 
         console.log(
-          `WORKER: fetch response from network for: ${event.request.url}`
+          `WORKER: fetch response from network for: ${event.request.url}`,
         );
 
         caches
@@ -138,7 +141,7 @@ self.addEventListener("fetch", (event) => {
           })
           .then(() => {
             console.log(
-              `WORKER: fetch response stored in cache for: ${event.request.url}`
+              `WORKER: fetch response stored in cache for: ${event.request.url}`,
             );
           });
         return response; // Fulfill the promise.
@@ -155,6 +158,6 @@ self.addEventListener("fetch", (event) => {
           }),
         });
       }
-    })
+    }),
   );
 });

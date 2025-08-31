@@ -1,5 +1,3 @@
-/* eslint-env browser */
-
 const form = {
   // Set the value from localStorage into the textbox and clear localStorage.
   DOMSetProducts() {
@@ -78,11 +76,11 @@ const FAQ = {
     });
     event.target.parentElement.classList.remove("FAQ-header-isCollapsed");
     event.target.parentElement.nextElementSibling.classList.remove(
-      "FAQ-isHidden"
+      "FAQ-isHidden",
     );
     event.target.parentElement.setAttribute("aria-expanded", "true");
     event.target.parentElement.nextElementSibling.classList.add(
-      "FAQ-isExpanded"
+      "FAQ-isExpanded",
     );
   },
   init() {

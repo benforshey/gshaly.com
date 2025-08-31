@@ -1,4 +1,3 @@
-/* eslint-env browser */
 import { addEventToArray, setActivePage, throttle } from "./utility.js";
 
 const listing = {

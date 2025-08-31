@@ -1,18 +1,18 @@
 const navigation = {
   toggleNav(event) {
     if (event.code === "Enter" || event.code === "Space") {
-      return event.currentTarget.click()
+      return event.currentTarget.click();
     }
-    return event
+    return event;
   },
 
   init() {
-    const navButton = document.querySelector(".navTrigger-label-header")
+    const navButton = document.querySelector(".navTrigger-label-header");
 
     if (navButton) {
-      return navButton.addEventListener("keydown", this.toggleNav)
+      return navButton.addEventListener("keydown", this.toggleNav);
     }
   },
-}
+};
 
-export default navigation
+export default navigation;
