@@ -1,11 +1,14 @@
 {{- if eq .Params.sectionnav true }}
 <nav aria-label="Page-Level Navigation" class="section-nav">
-  <ul>
-    {{- range (index .Site.Data.nav .Section) }} {{- range . }}
-    <li>
-      <a href="{{- index . 0 }}" class="section-link">{{- index . 1 }}</a>
-    </li>
-    {{- end }} {{- end }}
-  </ul>
+    <ul>
+    {{- range (index .Site.Data.nav .Section) }}
+        {{- range . }}
+        <li>
+            <!-- <a href="{{- if in (index . 0) "/" }}{{- $.Site.BaseURL }}{{- index . 0 }}{{- else }}{{- index . 0 }}{{- end }}" class="section-link">{{- index . 1 }}</a> -->
+            <a href="{{- if in (index . 0) "/" }}{{- index . 0 }}{{- else }}/{{- index . 0 }}{{- end }}" class="section-link">{{- index . 1 }}</a>
+        </li>
+        {{- end }}
+    {{- end }}
+    </ul>
 </nav>
 {{- end }}
