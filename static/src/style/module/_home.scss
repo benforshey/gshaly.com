@@ -10,12 +10,12 @@
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  padding: 2em .5em;
+  padding: 2em 0.5em;
 
   h2 {
     margin: 0;
     text-align: center;
-    transition: color .3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 
     &:hover {
       color: $brand-red;
@@ -24,7 +24,9 @@
 }
 
 .feature-ourStory {
-  box-shadow: 0 .125em 0 0 $brand-border, 0 -.125em 0 0 $brand-border;
+  box-shadow:
+    0 0.125em 0 0 $brand-border,
+    0 -0.125em 0 0 $brand-border;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -38,14 +40,16 @@
     display: flex;
     flex: 0 1 30%;
     flex-direction: column;
-    padding: .5em 2em;
+    padding: 0.5em 2em;
 
     h2 {
-      font-size: calc(2vw + .45em);
+      font-size: calc(2vw + 0.45em);
     }
   }
 
   .feature-ourStory {
-    box-shadow: .125em 0 0 0 $brand-border, -.125em 0 0 0 $brand-border;
+    box-shadow:
+      0.125em 0 0 0 $brand-border,
+      -0.125em 0 0 0 $brand-border;
   }
 }

@@ -15,7 +15,7 @@
     <title>{{ .Title }} | The GS Haly Company</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content='{{- if .Description }}{{- .Description | markdownify }}{{- else }}{{- "GS Haly is the oldest tea importer in the US with more than " }}{{- sub (int (dateFormat "2006" now)) 1889 -}}{{- " years of global trade experience. Our quality standards are unparalleled and guaranteed." }}{{- end }}'>
-    <link rel="preload" href="/dist/style/main_v1.0.1.css" as="style">
+    <link rel="preload" href="/dist/style/main_v1.0.2.css" as="style">
     <link rel="preload" href="/dist/script/bundle_v1.0.2.js" as="script">
     <!-- Favicon Links and Meta-->
     <link rel="apple-touch-icon" sizes="180x180" href="{{- .Site.BaseURL }}apple-touch-icon.png">
@@ -68,7 +68,7 @@
         }
     </script>
     <!-- Styles and Scripts -->
-    <link rel="stylesheet" href="/dist/style/main_v1.0.1.css">
+    <link rel="stylesheet" href="/dist/style/main_v1.0.2.css">
     <script src="/dist/script/bundle_v1.0.2.js" defer></script>
 </head>
 <body>
