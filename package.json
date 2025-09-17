@@ -7,7 +7,7 @@
     "@now/node": "^1.8.5",
     "dotenv": "^8.6.0",
     "formidable": "^1.2.6",
-    "postmark": "^2.9.5"
+    "postmark": "^4.0.5"
   },
   "devDependencies": {
     "autoprefixer": "7.2.6",
