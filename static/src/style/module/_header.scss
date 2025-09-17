@@ -18,7 +18,8 @@
   }
 
   .active {
-    box-shadow: 0 0.0625em 0 0 $brand-green-lighter,
+    box-shadow:
+      0 0.0625em 0 0 $brand-green-lighter,
       0 -0.0625em 0 0 $brand-green-lighter;
     color: $brand-green;
 
@@ -62,7 +63,9 @@
   margin: 0 1em 1em 0;
   position: relative;
   text-transform: uppercase;
-  transition: color 0.3s ease-in-out, text-shadow 0.2s ease-in-out,
+  transition:
+    color 0.3s ease-in-out,
+    text-shadow 0.2s ease-in-out,
     box-shadow 0.5s ease-in-out;
 
   span {
@@ -143,7 +146,7 @@
 }
 
 .heroImage-button-wrap {
-  bottom: 20%;
+  bottom: 8%;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -304,7 +307,9 @@ a.heroImage-button {
   }
 
   .feature-ourStory {
-    box-shadow: 0.125em 0 0 0 $brand-border, -0.125em 0 0 0 $brand-border;
+    box-shadow:
+      0.125em 0 0 0 $brand-border,
+      -0.125em 0 0 0 $brand-border;
   }
 }
 

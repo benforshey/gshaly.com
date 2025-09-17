@@ -1,7 +1,22 @@
 section = [
-    ["about-us/#service-excellence", "Service Excellence"],
-    ["about-us/#vision-and-mission", "Vision & Mission"],
-    ["about-us/company-history/#cover-start", "Company History"],
-    ["about-us/gs-haly-co-team/", "Our Team"],
-    ["about-us/our-passion/", "Our Passion"]
+  [
+    "/about-us/#service-excellence",
+    "Service Excellence",
+  ],
+  [
+    "/about-us/#vision-and-mission",
+    "Vision & Mission",
+  ],
+  [
+    "/about-us/company-history/#cover-start",
+    "Company History",
+  ],
+  [
+    "/about-us/gs-haly-co-team/",
+    "Our Team",
+  ],
+  [
+    "/about-us/our-passion/",
+    "Our Passion",
+  ],
 ]

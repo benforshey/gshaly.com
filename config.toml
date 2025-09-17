@@ -2,35 +2,35 @@ baseurl = "https://www.gshaly.com/"
 languageCode = "en-us"
 
 [markup.goldmark.renderer]
-unsafe= true
+unsafe = true
 
 SectionPagesMenu = "global"
 [[menu.global]]
-    name = "Home"
-    url = "/"
-    weight = 1
+name = "Home"
+url = "/"
+weight = 1
 [[menu.global]]
-    identifier = "about-us"
-    name = "About Us"
-    url = "/about-us/"
-    weight = 2
+identifier = "about-us"
+name = "About Us"
+url = "/about-us/"
+weight = 2
 [[menu.global]]
-    identifier = "our-teas"
-    name = "Our Teas"
-    url = "/our-teas/"
-    weight = 3
+identifier = "our-teas"
+name = "Our Teas"
+url = "/our-teas/"
+weight = 3
 [[menu.global]]
-    identifier = "our-standards"
-    name = "Our Standards"
-    url = "/our-standards/"
-    weight = 4
+identifier = "our-standards"
+name = "Our Standards"
+url = "/our-standards/"
+weight = 4
 [[menu.global]]
-    identifier = "ordering"
-    name = "Ordering"
-    url = "/ordering/"
-    weight = 5
+identifier = "ordering"
+name = "Ordering"
+url = "/ordering/"
+weight = 5
 [[menu.global]]
-    identifier = "tea-knowledge"
-    name = "Tea Knowledge"
-    url = "/tea-knowledge/"
-    weight = 6
+identifier = "tea-knowledge"
+name = "Tea Knowledge"
+url = "/tea-knowledge/"
+weight = 6

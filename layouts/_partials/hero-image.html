@@ -1,0 +1,10 @@
+{{- if .Params.heroimage }}
+<div role="region" class="heroImage-wrap">
+  <img
+    class="heroImage"
+    src="{{- index .Params.heroimage 1 }}"
+    alt="{{- index .Params.heroimage 0 }}"
+    srcset="{{ index .Params.heroimage 2 }} 1x, {{ index .Params.heroimage 3 }} 2x"
+  />
+</div>
+{{- end }}

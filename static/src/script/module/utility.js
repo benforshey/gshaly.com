@@ -63,7 +63,7 @@ const throttle = function (fn, threshhold, scope) {
 const insertAfter = function (newNode, referenceNode) {
   return referenceNode.parentNode.insertBefore(
     newNode,
-    referenceNode.nextElementSibling
+    referenceNode.nextElementSibling,
   );
 };
 

@@ -1,12 +1,12 @@
-$serif-stack: 'Sorts Mill Goudy', 'Goudy Old Style', 'Times New Roman', serif;
-$sans-serif-stack: 'Lato', 'Tahoma', sans-serif;
+$serif-stack: "Sorts Mill Goudy", "Goudy Old Style", "Times New Roman", serif;
+$sans-serif-stack: "Lato", "Tahoma", sans-serif;
 
 body {
   color: $color-body;
   font-family: $sans-serif-stack;
-  font-size: calc(1rem + .25vw);
+  font-size: calc(1rem + 0.25vw);
   font-weight: 300;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   line-height: 1.3;
 }
 
@@ -29,38 +29,37 @@ h6,
 .h6 {
   color: $color-heading;
   font-family: $serif-stack;
-  font-size: calc(2.441rem + .25vw);
-  margin-bottom: .5em;
+  font-size: calc(2.441rem + 0.25vw);
+  margin-bottom: 0.5em;
   margin-top: 1.25em;
 }
 
 h2,
 .h2 {
   color: $brand-green;
-  font-size: calc(1.7rem + .25vw);
+  font-size: calc(1.7rem + 0.25vw);
 }
 
 h3,
 .h3 {
-  font-size: calc(1.563rem + .25vw);
+  font-size: calc(1.563rem + 0.25vw);
 }
 
 h4,
 .h4 {
-  font-size: calc(1.25rem + .25vw);
+  font-size: calc(1.25rem + 0.25vw);
 }
 
 h5,
 .h5 {
-  font-size: calc(1rem + .25vw);
+  font-size: calc(1rem + 0.25vw);
 }
 
 h6,
 .h6 {
-  font-size: calc(.8rem + .25vw);
+  font-size: calc(0.8rem + 0.25vw);
 }
 
-// NOTE: probably remove this later, as this site isn't likely to have code snippets.
 code {
   font-family: monospace;
 }
@@ -91,7 +90,7 @@ code {
   h6,
   .h6 {
     font-size: 3.157rem;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     margin-top: 1.333em;
   }
 
@@ -117,6 +116,6 @@ code {
 
   h6,
   .h6 {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 }
