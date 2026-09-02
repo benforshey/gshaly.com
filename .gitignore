@@ -2,3 +2,5 @@
 .vercel
 node_modules
 public/**/*
+!public/job-postings
+!public/job-postings/*.pdf
