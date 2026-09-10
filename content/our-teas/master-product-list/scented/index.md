@@ -9,7 +9,7 @@ heroImage = [
     "/dist/image/header-tea-list@2x.jpg"
 ]
 productDescription = [
-    "Scented, as the name implies, refers to teas with fragrance imparted through contact with or exposure to the perfume of flowers or other aromatics.  The G.S. Haly Company’s selection of scented teas focuses on classic varieties and with exceptional quality base teas and natural, traditional scenting methods."
+    "Scented, as the name implies, refers to teas with fragrance imparted through contact with or exposure to the perfume of flowers or other aromatics.  The G.S. Haly Company’s selection of scented teas focuses on classic varieties with exceptional quality base teas and natural, traditional scenting methods."
 ]
 productImage = [
     "/dist/image/teatype-scented.jpg",

@@ -9,7 +9,7 @@ heroImage = [
     "/dist/image/header-tea-list@2x.jpg"
 ]
 productDescription = [
-    "Pu-erh is a distinctive tea type originating in Yunnan, China. Made from sun-withered and gently pan-fired leaves (mao cha), naturally occurring wild yeasts and beneficial bacteria cause the tea to ferment over time and develop unique and truly complex flavors. Our range of pu-erh teas include classic compressed tea cakes and loose leaf, in both dark (shu) and green (sheng) styles."
+    "Pu-erh is a distinctive tea type originating in Yunnan, China. Made from sun-withered and gently pan-fired leaves (mao cha), naturally occurring wild yeasts and beneficial bacteria cause the tea to ferment over time and develop unique and truly complex flavors. Our range of pu-erh teas includes classic compressed tea cakes and loose leaf, in both dark (shu) and green (sheng) styles."
 ]
 productImage = [
     "/dist/image/teatype-puerh.jpg",
