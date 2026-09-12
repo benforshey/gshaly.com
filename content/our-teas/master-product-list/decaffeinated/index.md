@@ -9,7 +9,7 @@ heroImage = [
     "/dist/image/header-tea-list@2x.jpg"
 ]
 productDescription = [
-    "Though caffeine naturally occurs in tea leaves, there are several methods for removing all but 1–2% of it. The cleanest method, using carbon dioxide, is our preferred approach for preserving the inherent character of the tea: CO2 is brought to a super-critical concentration, which then acts as a solvent to specifically isolate caffeine molecules from the leaf. The G.S. Haly Company offers a range of straight and flavored decaf teas that have undergone this processing."
+    "Though caffeine naturally occurs in tea leaves, there are several methods for removing all but 1–2% of it. The cleanest method, using carbon dioxide, is our preferred approach for preserving the inherent character of the tea: CO2 is brought to a supercritical concentration, which then acts as a solvent to specifically isolate caffeine molecules from the leaf. The G.S. Haly Company offers a range of straight and flavored decaf teas that have undergone this processing."
 ]
 productImage = [
     "/dist/image/teatype-decaffeinated.jpg",
